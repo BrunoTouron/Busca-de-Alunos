@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Busca_de_Alunos2.Models.Pesquisa>
+
+@{
+    ViewBag.Title = "Ultimas Pesquisas";
+}
+
+<h2>Ultimas Pesquisas</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Aluno.Ra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aluno.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aluno.Ra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aluno.Nome)
+        </td>
+        <td>
+        </td>
+    </tr>
+}
+
+</table>
