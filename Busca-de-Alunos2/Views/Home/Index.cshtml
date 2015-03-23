@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Busca_de_Alunos2.Models.Aluno>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h5>Pesquisar pelo RA:</h5>
+@*<input id="txtPesq" type="text" size="50" placeholder="Digite o RA">
+<input type="submit" value="Pesquisar" class="btn btn-default" /> |*@
+
+@using (Html.BeginForm())
+{
+    @Html.TextBox("txtPesq");
+    <input type="submit" value="Pesquisar" class="btn btn-default" />
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.ActionLink("Localização", "Index", "Mapa", new { id = item.Id }, null)
+            </td>
+        </tr>
+    }
+
+</table>

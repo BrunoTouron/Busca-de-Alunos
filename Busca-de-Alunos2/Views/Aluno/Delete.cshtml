@@ -1,0 +1,55 @@
+﻿@model Busca_de_Alunos2.Models.Aluno
+
+@{
+    ViewBag.Title = "Deletar Aluno";
+}
+
+<h2>Excluir Aluno</h2>
+
+<h3>Confirma a exclusão ?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lng)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

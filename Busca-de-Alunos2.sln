@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Busca-de-Alunos2", "Busca-de-Alunos2\Busca-de-Alunos2.csproj", "{F58F6A7E-A9B9-4A69-8BAB-30497980D228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Busca-de-Alunos2.Tests", "Busca-de-Alunos2.Tests\Busca-de-Alunos2.Tests.csproj", "{81B0E184-25AF-4C26-BB67-E2167BA55BBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F58F6A7E-A9B9-4A69-8BAB-30497980D228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58F6A7E-A9B9-4A69-8BAB-30497980D228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58F6A7E-A9B9-4A69-8BAB-30497980D228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58F6A7E-A9B9-4A69-8BAB-30497980D228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B0E184-25AF-4C26-BB67-E2167BA55BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B0E184-25AF-4C26-BB67-E2167BA55BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B0E184-25AF-4C26-BB67-E2167BA55BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B0E184-25AF-4C26-BB67-E2167BA55BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
