@@ -163,11 +163,14 @@
     <Compile Include="Controllers\MapaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PesquisaController.cs" />
+    <Compile Include="Controllers\UltimasPesquisasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Pesquisa.cs" />
     <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\BuscaAlunosContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -237,6 +240,12 @@
     <Content Include="Views\Aluno\Edit.cshtml" />
     <Content Include="Views\Aluno\Index.cshtml" />
     <Content Include="Views\Mapa\Index.cshtml" />
+    <Content Include="Views\Pesquisa\Create.cshtml" />
+    <Content Include="Views\Pesquisa\Delete.cshtml" />
+    <Content Include="Views\Pesquisa\Details.cshtml" />
+    <Content Include="Views\Pesquisa\Edit.cshtml" />
+    <Content Include="Views\Pesquisa\Index.cshtml" />
+    <Content Include="Views\UltimasPesquisas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

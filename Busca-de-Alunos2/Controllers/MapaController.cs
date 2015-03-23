@@ -20,12 +20,19 @@ namespace Busca_de_Alunos2.Controllers
             }
 
             Aluno aluno = db.Alunos.Find(id);
+
             if (aluno == null)
             {
                 return HttpNotFound();
             }
-            return View(db.Alunos.Find(id));
 
+            Pesquisa pesquisa = new Pesquisa();
+            pesquisa.Aluno = aluno;
+            db.Pesquisas.Add(pesquisa);
+            db.SaveChanges();
+            
+            return View(db.Alunos.Find(id));
+           
         }
     }
 }

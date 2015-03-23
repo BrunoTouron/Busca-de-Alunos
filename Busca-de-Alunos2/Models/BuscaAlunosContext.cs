@@ -17,6 +17,8 @@ namespace Busca_de_Alunos2.Models
 
         public DbSet<Aluno> Alunos { get; set; }
 
+        public DbSet<Pesquisa> Pesquisas { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // Pluralizing
